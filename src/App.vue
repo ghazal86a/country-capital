@@ -15,16 +15,15 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+html {
+  width: 100%;
+  height: 100%;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body {
+  background: linear-gradient(45deg,  rgba(66, 245, 135, 0.8) 0%,rgba(66, 245, 189,0.4) 100%);
+  color: rgba(#000000, 0.6);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
