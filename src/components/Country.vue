@@ -15,7 +15,7 @@
         <button type="submit" @click.prevent="OnSubmit()">
           Submit
         </button>
-        <button type="submit" @click="TryAgain()">Try Again!</button>
+        <button type="submit" @click.prevent="TryAgain()">Try Again!</button>
       </form>
       <h4>{{ result }}</h4>
     </div>
@@ -52,7 +52,7 @@ export default {
       );
       const countryCapital = countryObj[0].capital;
 
-      this.capital.toLowerCase() === countryCapital.toLowerCase()
+      this.capital.toLowerCase() === countryCapital.toLowerCase() && this.capital !== ''
         ? (this.result = "Well Done!")
         : (this.result = `Sorry! The correct answer is: ${countryCapital}`);
     },
